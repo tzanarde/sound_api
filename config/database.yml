@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV["DATABASE_USERNAME"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
+  host: <%= ENV["DATABASE_HOST"] %>
+
+development:
+  <<: *default
+  database: sound_api_development
+
+test:
+  <<: *default
+  database: sound_api_test
+
+production:
+  <<: *default
+  database: sound_api_production
+  username: sound_api
+  password: <%= ENV['DATABASE_PASSWORD'] %>
