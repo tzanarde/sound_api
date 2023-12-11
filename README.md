@@ -30,4 +30,4 @@ O projeto utiliza a framework Rails na versão 7.0.3.1
 Foi criada uma autenticação simples que verifica se o email e senha informados na requisição existem no banco de dados.
 
 
-Create by [Tiago Zanarde](https://tiagozanarde.dev).
+Created by [Tiago Zanarde](https://tiagozanarde.dev).
